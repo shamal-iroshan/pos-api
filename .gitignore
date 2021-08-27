@@ -1,2 +1,6 @@
 /.idea
 pos.iml
+/node_modules
+package-lock.json
+/db_info
+/db_info/db.mysql

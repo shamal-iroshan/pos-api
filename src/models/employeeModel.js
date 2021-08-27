@@ -23,7 +23,6 @@ Employee.create = (newEmployee, result) => {
 Employee.findById = (employeeId, result) => {
     connection.query(`SELECT * FROM employee WHERE emp_id = "${employeeId}"`, (err, res) => {
         if (err) {
-            console.log(err)
             result(err, null);
             return;
         }

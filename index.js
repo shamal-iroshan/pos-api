@@ -12,6 +12,7 @@ app.get('/', (req, res) => {
 });
 
 require("./src/routes/employeeRoutes")(app);
+require("./src/routes/customerRoutes")(app);
 
 app.listen(port, () => {
     console.log(`Server is listening on port ${port}`);
